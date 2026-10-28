@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.main.ProfileFragment">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="16dp">
+
+                <!-- Popular Communities -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Popular Communities"
+                    android:textSize="20sp" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp" />
+
+                <!-- First Row of Communities -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- Community 1 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintWidth_percent="0.45"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.example.infosys.animation.AnimatedGradientBorderView
+                            android:id="@+id/animatedBorder1"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:padding="6dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/image1"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:padding="4dp"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintDimensionRatio="1:1"
+                            app:layout_constraintEnd_toEndOf="@id/animatedBorder1"
+                            app:layout_constraintStart_toStartOf="@id/animatedBorder1"
+                            app:layout_constraintTop_toTopOf="@id/animatedBorder1" />
+
+                        <TextView
+                            android:id="@+id/image1_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="Community 1"
+                            app:layout_constraintTop_toBottomOf="@id/image1" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- Community 2 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.example.infosys.animation.AnimatedGradientBorderView
+                            android:id="@+id/animatedBorder2"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:padding="6dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:padding="4dp"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintDimensionRatio="1:1"
+                            app:layout_constraintEnd_toEndOf="@id/animatedBorder2"
+                            app:layout_constraintStart_toStartOf="@id/animatedBorder2"
+                            app:layout_constraintTop_toTopOf="@id/animatedBorder2" />
+
+                        <TextView
+                            android:id="@+id/image2_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="Community 2"
+                            app:layout_constraintTop_toBottomOf="@id/image2" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- Second Row of Communities -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <!-- Community 3 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintWidth_percent="0.45"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.example.infosys.animation.AnimatedGradientBorderView
+                            android:id="@+id/animatedBorder3"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:padding="6dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/image3"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:padding="4dp"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintDimensionRatio="1:1"
+                            app:layout_constraintEnd_toEndOf="@id/animatedBorder3"
+                            app:layout_constraintStart_toStartOf="@id/animatedBorder3"
+                            app:layout_constraintTop_toTopOf="@id/animatedBorder3" />
+
+                        <TextView
+                            android:id="@+id/image3_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="Community 3"
+                            app:layout_constraintTop_toBottomOf="@id/image3" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- Community 4 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintWidth_percent="0.45"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.example.infosys.animation.AnimatedGradientBorderView
+                            android:id="@+id/animatedBorder4"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:padding="6dp"
+                            app:layout_constraintDimensionRatio="1:1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/image4"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:padding="4dp"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintDimensionRatio="1:1"
+                            app:layout_constraintEnd_toEndOf="@id/animatedBorder4"
+                            app:layout_constraintStart_toStartOf="@id/animatedBorder4"
+                            app:layout_constraintTop_toTopOf="@id/animatedBorder4" />
+
+                        <TextView
+                            android:id="@+id/image4_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="Community 4"
+                            app:layout_constraintTop_toBottomOf="@id/image4" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- Similar People Nearby -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Similar People Nearby"
+                    android:textSize="20sp" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/nearbyUsersRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="8dp"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/dotIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingVertical="8dp" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

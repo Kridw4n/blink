@@ -1,0 +1,16 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/dark_blue"
+    android:elevation="4dp"
+    android:paddingStart="16dp">
+
+<ImageView
+android:id="@+id/toolbarLogo"
+android:layout_width="60dp"
+android:layout_height="40dp"
+android:layout_gravity="center_vertical"
+android:src="@drawable/blink"
+android:contentDescription="App Logo" />
+    </androidx.appcompat.widget.Toolbar>

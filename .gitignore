@@ -1,0 +1,16 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Unused duplicate Firebase configuration
+/app/1-google-services.json
+
+# Unused source archive
+/app/src/main/res/res.zip
